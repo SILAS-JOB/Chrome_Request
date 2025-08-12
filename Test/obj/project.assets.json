@@ -411,6 +411,19 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "App/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/App.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/App.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -932,10 +945,16 @@
         "xunit.runner.visualstudio.2.8.2.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "App/1.0.0": {
+      "type": "project",
+      "path": "../App/App.csproj",
+      "msbuildProject": "../App/App.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "App >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
@@ -966,7 +985,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/silas/Projetos/Chrome_Request/App/App.csproj": {
+              "projectPath": "/home/silas/Projetos/Chrome_Request/App/App.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
