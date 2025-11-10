@@ -11,6 +11,13 @@ module.exports = {
   },
   plugins: [
     new NxAppWebpackPlugin({
+      transformers: [{
+        name: '@nestjs/swagger/plugin',
+        options: {
+          dtoFileNameSuffix: ['.dto.ts', '.entity.ts'],
+        },
+      },
+    ],
       target: 'node',
       compiler: 'tsc',
       main: './src/main.ts',
