@@ -1,5 +1,8 @@
 {
   "compileOnSave": false,
+  "ts-node": {
+    "typeCheck": true
+  },
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
@@ -8,12 +11,13 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2024",
     "module": "esnext",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "strictFunctionTypes": true,
     "paths": {}
   },
   "exclude": ["node_modules", "tmp"]

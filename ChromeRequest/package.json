@@ -2,7 +2,10 @@
   "name": "@chrome-request/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "lint": "nx lint",
+    "start:apps": "concurrently \"nx serve web\" \"nx serve api\""
+  },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~20.3.0",
@@ -19,6 +22,7 @@
     "@nestjs/core": "^11.0.0",
     "@nestjs/platform-express": "^11.0.0",
     "axios": "^1.6.0",
+    "concurrently": "^9.2.1",
     "express": "^4.21.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~7.8.0",
