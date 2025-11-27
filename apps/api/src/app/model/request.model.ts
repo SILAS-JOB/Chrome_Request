@@ -2,13 +2,13 @@
 
 
 
-interface Chrome  {
+export interface Chrome  {
     quantity: number
     colorEspec? : boolean
     color? : string
 }
 
-interface User {
+export interface User {
     name: string
     email: string
     isBlocked? : boolean 
